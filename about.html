@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="JS/script.js">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <title>About</title>
+</head>
+<body>
+    <header>
+        <div class="mobile-header">
+            <a href="home.html"><img src="img/Logo-Oriyan-Nadav4.png" alt="Oriyan Nadav Logo" id="logo"></a>
+            <button class="hamburger-button">
+                <img src="img/hamburger-icon.png" alt="Hamburger Icon" id="hamburger-icon">
+            </button>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="portfolio.html">Portfolio</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero-about">
+        <section class="about">
+            <section id="about-headings">
+                <h1><span class="element"></span></h1>
+                <h2>I'm a full stack web developer based in Gold Coast, Australia.</h2>
+                <p>Graduated from Griffiht College with a Diploma in Engineering in 2022 and finish the She Codes Bootcam in 2023.</p>
+            </section>
+        </section>
+    </section>
+    <script>
+        var typed = new Typed('.element', {
+            strings: ["About."],
+            typeSpeed: 70,
+            startDelay: 900,
+            backSpeed: 70,
+            backDelay: 800,
+            // loop: true
+            showCursor: false
+        }); 
+    </script>
+</body>
+</html>

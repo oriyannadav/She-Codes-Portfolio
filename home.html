@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="JS/script.js">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <div class="mobile-header">
+            <a href="home.html"><img src="img/Logo-Oriyan-Nadav4.png" alt="Oriyan Nadav Logo" id="logo"></a>
+            <button class="hamburger-button">
+                <img src="img/hamburger-icon.png" alt="Hamburger Icon" id="hamburger-icon">
+            </button>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="portfolio.html">Portfolio</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero">
+        <h1><span class="element"></span></h1>
+    </section>
+</body>
+<script>
+    var typed = new Typed('.element', {
+        strings: ["I'm Oriyan.", "I'm A Full Stack Web Developer."],
+        typeSpeed: 70,
+        startDelay: 900,
+        backSpeed: 70,
+        backDelay: 800,
+        // loop: true
+        showCursor: false
+    }); 
+</script>
+</html>

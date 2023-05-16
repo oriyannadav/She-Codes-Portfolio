@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="JS/script.js">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <div class="mobile-header">
+            <a href="home.html"><img src="img/Logo-Oriyan-Nadav4.png" alt="Oriyan Nadav Logo" id="logo"></a>
+            <button class="hamburger-button">
+                <img src="img/hamburger-icon.png" alt="Hamburger Icon" id="hamburger-icon">
+            </button>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="portfolio.html">Portfolio</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+        <section class="contact-section">
+            <div id="contact-and-photo">
+                <div id="contact-block">
+                    <section class="contact">
+                        <section id="contact-headings">
+                            <h1><span class="element"></span></h1>
+                            <p>Get in touch with me via social media or email.</p>
+                        </section>
+                    </section>
+                    <section class="social-media">
+                        <ul>
+                            <li class="instagram-icon">
+                                <a href="#">
+                                    <section id="instagram-icon">
+                                        <img class="static" src="img/instagram-icon-static.png" alt="Instagram Icon">
+                                        <img class="active" src="img/instagram-icon.gif" alt="Instagram Icon">
+                                    </section>
+                                    <h3>Instagram</h3>
+                                </a>
+                            </li>
+                            <li class="facebook-icon">
+                                <a href="#">
+                                    <section id="facebook-icon">
+                                        <img class="static" src="img/facebook-icon-static.png" alt="Facebook Icon">
+                                        <img class="active" src="img/facebook-icon.gif" alt="Facebook Icon">
+                                    </section>
+                                    <h3>Facebook</h3>
+                                </a>
+                            </li>
+                    </section>
+                </div>
+                <div class="profile-pic">
+                    <img src="img/profile-pic (1).jpg" id="profile-pic" alt="Profile Photo">
+                </div>
+            </div>
+            <section class="form">
+                <h2>Send me an email</h2>
+                <section id="form-section">
+                    <form action="https://formspree.io/f/mvonyawe" method="POST">
+                        <section class="block-section">
+                            <label id="your-name" for="your-name">Name</label>
+                            <input type="text">
+                            <label id="your-email">Email</label>
+                            <input type="email" name="email">
+                        </section>
+                        <section id="textarea-section">
+                            <label id="your-message">Message</label>
+                            <textarea name="message"></textarea>
+                        </section>
+                        <input type="submit" value="submit">
+                    </form>
+                </section>
+            </section>
+        </section>
+        <script>
+            var typed = new Typed('.element', {
+                strings: ["Contact."],
+                typeSpeed: 70,
+                startDelay: 900,
+                backSpeed: 70,
+                backDelay: 800,
+                // loop: true
+                showCursor: false
+            }); 
+        </script>
+</body>
+</html>
