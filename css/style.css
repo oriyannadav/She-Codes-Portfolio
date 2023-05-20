@@ -106,6 +106,15 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+
+.mobile-nav ul li {
+    line-height: 60px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .mobile-nav a {
