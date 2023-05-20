@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="JS/script.js">
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <title>About</title>
 </head>
 <body>
@@ -14,10 +12,26 @@
         <div class="mobile-header">
             <a href="home.html"><img src="img/Logo-Oriyan-Nadav4.png" alt="Oriyan Nadav Logo" id="logo"></a>
             <button class="hamburger-button">
-                <img src="img/hamburger-icon.png" alt="Hamburger Icon" id="hamburger-icon">
+                <img src="img/hamburger-icon.png" alt="Hamburger Icon" class="hamburger-icon">
             </button>
         </div>
-        <nav>
+        <nav class="desktop-nav">
+            <ul>
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="portfolio.html">Portfolio</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="mobile-nav display-none">
             <ul>
                 <li>
                     <a href="home.html">Home</a>
@@ -34,22 +48,22 @@
             </ul>
         </nav>
     </header>
-    <section id="hero-about">
-        <section class="about">
-            <section id="about-headings">
+    <section id="about-section">
+        <div class="about">
+            <article id="about-headings">
                 <h1><span class="element"></span></h1>
                 <h2>I'm a full stack web developer based in Gold Coast, Australia.</h2>
-                <p>Graduated from Griffith College with a Diploma in Engineering in 2022 and finish the She Codes Bootcamp in 2023.</p>
-            </section>
-        </section>
+                <p>I was born in Israel in 2000 and relocated to Australia with my family in 2016. After completing my education at Benowa State High School in 2019, I pursued my passion for engineering and obtained a Diploma in Engineering from Griffith College in 2022. Eager to expand my skills, I recently completed the She Codes Bootcamp in 2023. Throughout my journey, I have taken on various casual jobs, but my ultimate goal is to become a proficient full stack web developer. With a strong foundation and a drive for growth, I am excited to embark on this new chapter in my career.</p>
+            </article>
+        </div>
     </section>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="js/script.js"></script>
     <script>
         var typed = new Typed('.element', {
             strings: ["About."],
-            typeSpeed: 70,
-            startDelay: 900,
-            backSpeed: 70,
-            backDelay: 800,
+            typeSpeed: 80,
+            startDelay: 500,
             // loop: true
             showCursor: false
         }); 

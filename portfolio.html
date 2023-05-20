@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="JS/script.js">
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <title>Protfolio</title>
 </head>
 <body>
@@ -14,10 +12,26 @@
         <div class="mobile-header">
             <a href="home.html"><img src="img/Logo-Oriyan-Nadav4.png" alt="Oriyan Nadav Logo" id="logo"></a>
             <button class="hamburger-button">
-                <img src="img/hamburger-icon.png" alt="Hamburger Icon" id="hamburger-icon">
+                <img src="img/hamburger-icon.png" alt="Hamburger Icon" class="hamburger-icon">
             </button>
         </div>
-        <nav>
+        <nav class="desktop-nav">
+            <ul>
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="portfolio.html">Portfolio</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="mobile-nav display-none">
             <ul>
                 <li>
                     <a href="home.html">Home</a>
@@ -34,7 +48,41 @@
             </ul>
         </nav>
     </header>
-    <section id="hero">
+    <section id="portfolio-section">
+        <section class="portfolio">
+            <section id="portfolio-headings">
+                <h1><span class="element"></span></h1>
+            </section>
+        </section>
+        <section id="portfolio-examples">
+            <section class="portfolio-block-section">
+                <article class="diploma" id="article-height"> 
+                    <h2>Diploma of Engineering</h2>
+                    <a href="img/Diploma of Engineering.jpeg" target="_blank"><img src="img/Diploma of Engineering.jpeg" alt="Diploma Photo" class="photos"></a>
+                    <p>Graduated Griffith College in 2022.</p>
+                </article>
+                <article class="shecodes-web" id="article-height">
+                    <h2>She Codes Website</h2>
+                    <a href="#" target="_blank"><img src="img/SheCodes-Web.png" alt="She Codes Website" class="photos"></a>
+                    <p>Creates a website for She Codes based on HTML and CSS.</p>
+                </article>
+                <article class="python" id="article-height">
+                    <h2>Python</h2>
+                    <a href="#" target="_blank"><img src="img/Python-Icon.png" alt="Python" class="photos"></a>
+                    <p>Learnt the language Python.</p>
+                </article>
+        </section>
     </section>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        var typed = new Typed('.element', {
+            strings: ["Portfolio."],
+            typeSpeed: 80,
+            startDelay: 500,
+            // loop: true
+            showCursor: false
+        }); 
+    </script>
 </body>
 </html>

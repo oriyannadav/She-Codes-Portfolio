@@ -1,16 +1,11 @@
-import Typed from 'typed.js';
+const hamburgerButton = document.querySelector(".hamburger-button");
+const mobileNav = document.querySelector(".mobile-nav");
 
-var typed = new Typed('.element', {
-    strings: ["First sentence.", "Second sentence."],
-    typeSpeed: 30,
-    backspeed: 30
-}); 
+hamburgerButton.addEventListener("click", () => {
+    mobileNav.classList.toggle("display-none")
+})
 
-// var typed = new Typed('.element', {
-//     strings: ["I'm Oriyan.", "I'm A Full Stack Web Developer."],
-//     typeSpeed: 70,
-//     startDelay: 900,
-//     backSpeed: 70,
-//     backDelay: 800,
-//     // loop: true
-// }); 
+const video = document.querySelector("video");
+
+// Slow it to 50% speed
+video.playbackRate = 0.55;

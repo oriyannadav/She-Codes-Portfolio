@@ -6,6 +6,7 @@
 @import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
 @import url('https://fonts.cdnfonts.com/css/proxima-nova-lt');
 @import url('https://fonts.cdnfonts.com/css/helvetica-neue-9');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 
 /* CSS Reset */
 
@@ -29,6 +30,7 @@ h1, h2, h3, h4, h5, h6 {
     /* font-family: 'Montserrat', sans-serif; */
     /* font-family: 'Ysabeau', sans-serif; */
     font-family: "proxima nova", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    /* font-family: 'DM Serif Display', serif; */
 }
 
 body,
@@ -82,6 +84,10 @@ header {
     padding: 0px 32px;
 }
 
+.desktop-nav {
+    display: none;
+}
+
 .mobile-header {
     background-color: rgb(22, 19, 19);
     height: 11vh;
@@ -90,9 +96,17 @@ header {
     justify-content: space-between;
 }
 
+.mobile-nav a {
+    text-decoration: none;
+    color: var(--black);
+    display: block;
+    text-align: end;
+    padding: 4px 16px;
+}
+
 nav {
-    display: none;
-    color: white;
+    /* display: none; */
+    color: rgb(22, 19, 19);
 }
 
 header button {
@@ -103,6 +117,10 @@ header button {
     height: 64px;
     width: auto;
 } 
+
+.display-none {
+    display: none;
+}
 
 @media (min-width: 768px) {
     header {
@@ -133,7 +151,15 @@ header button {
         margin-right: 16px;
     }
 
-    #hamburger-icon {
+    .hamburger-icon {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: block;
+    }
+
+    .mobile-nav {
         display: none;
     }
 
@@ -172,7 +198,7 @@ header button {
         margin-right: 16px;
     }
 
-    #hamburger-icon {
+    .hamburger-icon {
         display: none;
     }
 
@@ -211,7 +237,7 @@ header button {
         margin-right: 16px;
     }
 
-    #hamburger-icon {
+    .hamburger-icon {
         display: none;
     }
 
@@ -221,74 +247,631 @@ header button {
     }
 }
 
-/* hero */
+/* background-gradient */
 
-#hero {
-    background-color: rgb(247,230,228);
+.bg-gradient {
+    background: linear-gradient(to bottom, rgba(255,0,0,0), rgba(22,19,19,1.3));
+}
+
+/* quote */
+
+#quote {
     height: 89vh;
-    padding: 0px 32px;
+    padding: 40px 32px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end ;
 }
 
-#hero h1{
-    font-size: 3.5rem;
-    margin-bottom: 24px;
-}
+#quote span {
+    font-size: 1.7rem;
+    font-family: 'Proxima Nova Lt', sans-serif;
+    font-weight: 500;
+    margin: 0px;
+    color: rgb(247,230,229);
+} 
 
 @media (min-width: 768px) {
-    #hero {
+    #quote {
         height: 89vh;
-        padding: 0px 50px;
+        padding: 40px 50px;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end ;
     }
 
-    #hero h1 {
-        font-size: 3rem;
+    #quote span {
+        font-size: 1.9rem;
         font-family: 'Proxima Nova Lt', sans-serif;
-        font-weight: 600;
-        /* padding: 0px 136px; */
-        color: rgb(22, 19, 19);
+        font-weight: 500;
+        margin: 0px;
+        color: rgb(247,230,229);
     } 
 }
 
 @media (min-width: 992px) {
-    #hero {
+    #quote {
         height: 89vh;
-        padding: 0px 100px;
+        padding: 40px 100px;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end ;
     }
 
-    #hero h1 {
-        font-size: 4rem;
+    #quote span {
+        font-size: 2.1rem;
         font-family: 'Proxima Nova Lt', sans-serif;
-        font-weight: 600;
-        /* padding: 0px 168px; */
-        color: rgb(22, 19, 19);
+        font-weight: 500;
+        margin: 0px;
+        color: rgb(247,230,229);
     } 
 }
 
 @media (min-width: 1280px) {
-    #hero {
+    #quote {
         height: 89vh;
-        padding: 0px 48px;
+        padding: 40px 200px;
         display: flex;
         justify-content: center;
+        align-items: flex-end ;
+    }
+
+    #quote span {
+        font-size: 2.3rem;
+        font-family: 'Proxima Nova Lt', sans-serif;
+        font-weight: 500;
+        margin: 0px;
+        color: rgb(247,230,229);
+    } 
+}
+
+/* video */
+
+#video {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 89%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* about */
+
+#about-section{
+    height: 89vh;
+    background-color: rgb(247,230,228);
+    padding: 0px 32px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#about-section h1 {
+    font-size: 5rem;
+    font-family: 'DM Serif Display', serif;
+    max-width: 70%;
+    color: rgb(22, 19, 19);
+}
+
+#about-section h2 {
+    font-family: 'Proxima Nova Lt', "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    font-size: 1.5rem;
+    color: rgb(93,81,81);
+    padding: 8px 0px;
+    margin: 0px 0px 24px;
+    font-weight: normal;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+}
+
+.about {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#about-headings {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    #about-section {
+        height: 89vh;
+        background-color: rgb(247,230,228);
+        padding: 0px 50px;
+        display: flex;
+        justify-content: flex-start;
         align-items: center;
     }
 
-    #hero h1 {
-        font-size: 5rem;
-        font-family: 'Proxima Nova Lt', sans-serif;
-        font-weight: 600;
-        padding: 0px 168px;
+    #about-section h1 {
+        font-size: 5.5rem;
+        font-family: 'DM Serif Display', serif;
         color: rgb(22, 19, 19);
-    } 
+    }
+
+    #about-section h2 {
+        font-family: 'Proxima Nova Lt', "Helvetica Neue", Helvetica, Arial, Sans-serif;
+        font-size: 2rem;
+        color: rgb(93,81,81);
+        padding: 8px 0px;
+        margin: 0px 0px 24px;
+        font-weight: normal;
+        inline-size: 650px;
+        overflow-wrap: break-word;
+        line-height: 1.5;
+    }
+
+    #about-section p {
+        font-family: 'Proxima Nova Lt', "Helvetica Neue", Helvetica, Arial, Sans-serif;
+        font-size: 20px;
+        padding: 4px 0px;
+        margin: 0px 0px 24px;
+        font-weight: normal;
+        overflow-wrap: break-word;
+        line-height: 1.5;
+    }
+
+    .about {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #about-headings {
+        display: block;
+    }
+}
+
+@media (min-width: 992px) {
+    #about-section{
+        height: 89vh;
+        background-color: rgb(247,230,228);
+        padding: 0px 100px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #about-section h1 {
+        font-size: 5.5rem;
+        font-family: 'DM Serif Display', serif;
+        color: rgb(22, 19, 19);
+    }
+
+    #about-section h2 {
+        font-family: 'Proxima Nova Lt', "Helvetica Neue", Helvetica, Arial, Sans-serif;
+        font-size: 2rem;
+        color: rgb(93,81,81);
+        padding: 8px 0px;
+        margin: 0px 0px 24px;
+        font-weight: normal;
+        inline-size: 650px;
+        overflow-wrap: break-word;
+        line-height: 1.5;
+    }
+
+    .about {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #about-headings {
+        display: block;
+    }
+}
+
+@media (min-width: 1280px) {
+    #about-section {
+        height: 89vh;
+        background-color: rgb(247,230,228);
+        padding: 0px 200px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #about-section h1 {
+        font-size: 5.5rem;
+        font-family: 'DM Serif Display', serif;
+        color: rgb(22, 19, 19);
+    }
+
+    #about-section h2 {
+        font-family: 'Proxima Nova Lt', "Helvetica Neue", Helvetica, Arial, Sans-serif;
+        font-size: 2rem;
+        color: rgb(93,81,81);
+        padding: 8px 0px;
+        margin: 0px 0px 24px;
+        font-weight: normal;
+        inline-size: 650px;
+        overflow-wrap: break-word;
+        line-height: 1.5;
+    }
+
+    .about {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #about-headings {
+        display: block;
+    }
+}
+
+/* portfolio */
+
+#portfolio-section {
+    height: 280vh;
+    width: auto;
+    background-color: rgb(247,230,228);
+    padding: 0px 32px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+#portfolio-section h1 {
+    font-size: 5.5rem;
+    font-family: 'DM Serif Display', serif;
+    color: rgb(22, 19, 19);
+}
+
+#portfolio-section h2 {
+    font-family: 'Proxima Nova Lt', "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    font-size: 1.5rem;
+    color: rgb(93,81,81);
+    padding: 8px 0px 4px 0px;
+    margin: 0px 0px 24px;
+    font-weight: normal;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+}
+
+#portfolio-examples {
+    display: flex;
+}
+
+#portfolio-examples article {
+    padding: 32px 16px;
+    max-width: 350px;
+    min-width: 250px;
+}
+
+#portfolio-examples article h2 {
+    margin-bottom: 16px;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+#portfolio-examples article p {
+    margin-bottom: 16px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#article-height {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.diploma {
+    background-color: rgb(218,192,190);
+    border-radius: 10px;
+    padding: 20px 50px;
+    margin-bottom: 25px;
+}
+
+.shecodes-web {
+    background-color: rgb(218,192,190);
+    border-radius: 10px;
+    padding: 20px 50px;
+    margin-bottom: 25px;
+}
+
+.python {
+    background-color: rgb(218,192,190);
+    border-radius: 10px;
+    padding: 45px 50px;
+}
+
+
+#portfolio-examples .photos {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+} 
+
+@media (min-width: 768px) {
+    #portfolio-section {
+        height: 144vh;
+        width: auto;
+        background-color: rgb(247,230,228);
+        padding: 0px 50px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    #portfolio-section h1 {
+        font-size: 5.5rem;
+        font-family: 'DM Serif Display', serif;
+        color: rgb(22, 19, 19);
+    }
+
+    #portfolio-section h2 {
+        font-family: 'Proxima Nova Lt', "Helvetica Neue", Helvetica, Arial, Sans-serif;
+        font-size: 1.5rem;
+        color: rgb(93,81,81);
+        padding: 8px 0px 4px 0px;
+        margin: 0px 0px 24px;
+        font-weight: normal;
+        overflow-wrap: break-word;
+        line-height: 1.5;
+    }
+
+    #portfolio-examples {
+        display: flex;
+        max-height: 550px;
+    }
+
+    #portfolio-examples article {
+        padding: 32px 16px;
+        max-width: 350px;
+        min-width: 250px;
+    }
+
+    #portfolio-examples article h2 {
+        margin-bottom: 16px;
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+    
+    #portfolio-examples article p {
+        margin-bottom: 16px;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .portfolio-block-section {
+        display: flex;
+        justify-content: center;
+    }
+
+    #article-height {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .diploma {
+        background-color: rgb(218,192,190);
+        border-radius: 10px;
+        padding: 20px 50px;
+        margin-right: 25px;
+    }
+
+    .shecodes-web {
+        background-color: rgb(218,192,190);
+        border-radius: 10px;
+        padding: 20px 50px;
+        margin-right: 25px;
+    }
+
+    .python {
+        background-color: rgb(218,192,190);
+        border-radius: 10px;
+        padding: 45px 50px;
+    }
+
+
+    #portfolio-examples .photos {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    #portfolio-section {
+        height: 144vh;
+        width: auto;
+        background-color: rgb(247,230,228);
+        padding: 0px 100px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    #portfolio-section h1 {
+        font-size: 5.5rem;
+        font-family: 'DM Serif Display', serif;
+        color: rgb(22, 19, 19);
+    }
+
+    #portfolio-section h2 {
+        font-family: 'Proxima Nova Lt', "Helvetica Neue", Helvetica, Arial, Sans-serif;
+        font-size: 1.5rem;
+        color: rgb(93,81,81);
+        padding: 8px 0px 4px 0px;
+        margin: 0px 0px 24px;
+        font-weight: normal;
+        overflow-wrap: break-word;
+        line-height: 1.5;
+    }
+
+    #portfolio-examples {
+        display: flex;
+        max-height: 550px;
+    }
+
+    #portfolio-examples article {
+        padding: 32px 16px;
+        max-width: 350px;
+        min-width: 250px;
+    }
+
+    #portfolio-examples article h2 {
+        margin-bottom: 16px;
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+    
+    #portfolio-examples article p {
+        margin-bottom: 16px;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .portfolio-block-section {
+        display: flex;
+        justify-content: center;
+    }
+
+    #article-height {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .diploma {
+        background-color: rgb(218,192,190);
+        border-radius: 10px;
+        padding: 20px 50px;
+        margin-right: 25px;
+    }
+
+    .shecodes-web {
+        background-color: rgb(218,192,190);
+        border-radius: 10px;
+        padding: 20px 50px;
+        margin-right: 25px;
+    }
+
+    .python {
+        background-color: rgb(218,192,190);
+        border-radius: 10px;
+        padding: 45px 50px;
+    }
+
+
+    #portfolio-examples .photos {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+}
+
+@media (min-width: 1280px) {
+    #portfolio-section {
+        height: 144vh;
+        width: auto;
+        background-color: rgb(247,230,228);
+        padding: 0px 200px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    #portfolio-section h1 {
+        font-size: 5.5rem;
+        font-family: 'DM Serif Display', serif;
+        color: rgb(22, 19, 19);
+    }
+
+    #portfolio-section h2 {
+        font-family: 'Proxima Nova Lt', "Helvetica Neue", Helvetica, Arial, Sans-serif;
+        font-size: 2rem;
+        color: rgb(93,81,81);
+        padding: 8px 0px 4px 0px;
+        margin: 0px 0px 24px;
+        font-weight: normal;
+        overflow-wrap: break-word;
+        line-height: 1.5;
+    }
+
+    #portfolio-examples {
+        display: flex;
+        max-height: 550px;
+    }
+
+    #portfolio-examples article {
+        padding: 32px 16px;
+        max-width: 350px;
+        min-width: 250px;
+    }
+
+    #portfolio-examples article h2 {
+        margin-bottom: 16px;
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+    
+    #portfolio-examples article p {
+        margin-bottom: 16px;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .portfolio-block-section {
+        display: flex;
+        justify-content: center;
+    }
+
+    #article-height {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .diploma {
+        background-color: rgb(218,192,190);
+        border-radius: 10px;
+        padding: 20px 50px;
+        margin-right: 25px;
+    }
+
+    .shecodes-web {
+        background-color: rgb(218,192,190);
+        border-radius: 10px;
+        padding: 20px 50px;
+        margin-right: 25px;
+    }
+
+    .python {
+        background-color: rgb(218,192,190);
+        border-radius: 10px;
+        padding: 45px 50px;
+    }
+
+
+    #portfolio-examples .photos {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
 }
 
 /* contact */
@@ -313,8 +896,8 @@ header button {
 }
 
 .contact h1 {
-    font-size: 5.5rem;
-    font-family: 'Proxima Nova', sans-serif;
+    font-size: 5rem;
+    font-family: 'DM Serif Display', serif;
     max-width: 70%;
     color: rgb(22, 19, 19);
 }
@@ -327,12 +910,16 @@ header button {
     margin: 0px 0px 24px;
 }
 
-#profile-pic{
+/* #profile-pic{
     height: 280px;
     width: 160px;
+} */
+
+#profile-pic {
+    display: none;
 }
 
-#contact-and-photo{
+#contact-and-photo { 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -344,7 +931,7 @@ header button {
 }
 
 #instagram-icon, #facebook-icon, .social-media h3 {
-display: inline;
+    display: inline;
 }
 
 .social-media a {
@@ -464,7 +1051,7 @@ display: inline;
 
     .contact h1 {
         font-size: 5.5rem;
-        font-family: 'Proxima Nova', sans-serif;
+        font-family: 'DM Serif Display', serif;
         max-width: 70%;
         color: rgb(22, 19, 19);
     }
@@ -615,7 +1202,7 @@ display: inline;
 
     .contact h1 {
         font-size: 5.5rem;
-        font-family: 'Proxima Nova', sans-serif;
+        font-family: 'DM Serif Display', serif;
         max-width: 70%;
         color: rgb(22, 19, 19);
     }
@@ -765,7 +1352,7 @@ display: inline;
 
     .contact h1 {
         font-size: 5.5rem;
-        font-family: 'Proxima Nova', sans-serif;
+        font-family: 'DM Serif Display', serif;
         max-width: 70%;
         color: rgb(22, 19, 19);
     }
@@ -790,7 +1377,7 @@ display: inline;
     }
 
     #contact-block, .profile-pic {
-        flex: 1;
+        flex: 2;
     }
 
     .contact-section h3 {
@@ -896,41 +1483,15 @@ display: inline;
     }  
 }
 
-@media (min-width: 768px) {
-    #hero-about{
-        height: 89vh;
-        background-color: rgb(247,230,228);
-        padding: 0px 200px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
+/* Footer */
 
-    #hero-about h1 {
-        font-size: 5.5rem;
-        font-family: 'Proxima Nova', sans-serif;
-        color: rgb(22, 19, 19);
-    }
-
-    #hero-about h2 {
-        font-family: 'Proxima Nova Lt', "Helvetica Neue", Helvetica, Arial, Sans-serif;
-        font-size: 2rem;
-        color: rgb(93,81,81);
-        padding: 8px 0px;
-        margin: 0px 0px 24px;
-        font-weight: normal;
-        inline-size: 650px;
-        overflow-wrap: break-word;
-        line-height: 1.5;
-    }
-
-    .about {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    #about-headings {
-        display: block;
-    }
+footer {
+    padding: 16px;
+    text-align: center;
 }
+
+/* Utilities */
+
+/* .display-none {
+    display: none;
+} */

@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="JS/script.js">
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <title>Home</title>
 </head>
 <body>
@@ -14,10 +12,26 @@
         <div class="mobile-header">
             <a href="home.html"><img src="img/Logo-Oriyan-Nadav4.png" alt="Oriyan Nadav Logo" id="logo"></a>
             <button class="hamburger-button">
-                <img src="img/hamburger-icon.png" alt="Hamburger Icon" id="hamburger-icon">
+                <img src="img/hamburger-icon.png" alt="Hamburger Icon" class="hamburger-icon">
             </button>
         </div>
-        <nav>
+        <nav class="desktop-nav">
+            <ul>
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="portfolio.html">Portfolio</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="mobile-nav display-none">
             <ul>
                 <li>
                     <a href="home.html">Home</a>
@@ -34,19 +48,29 @@
             </ul>
         </nav>
     </header>
-    <section id="hero">
-        <h1><span class="element"></span></h1>
+    <section class="bg-gradient">
+        <div id="quote">
+            <p><span class="element"></span></p>
+        </div>
+        <video id="video" muted loop autoplay>
+            <source src="img/video.mp4" type="video/mp4">
+            <source src="img/video.webm" type="video/webm">
+        </video>
     </section>
 </body>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script src="js/script.js"></script>
 <script>
     var typed = new Typed('.element', {
-        strings: ["I'm Oriyan.", "I'm A Full Stack Web Developer."],
-        typeSpeed: 70,
-        startDelay: 900,
-        backSpeed: 70,
-        backDelay: 800,
-        // loop: true
-        showCursor: false
-    }); 
+    // strings: ["&ldquo;The way I see it, if you want the rainbow, you gotta put up with the rain.&rdquo;\r\n--Dolly Parton"],
+    strings: ["My name is Oriyan Nadav and this is my portfolio website"],
+    typeSpeed: 80,
+    startDelay: 500,
+    backSpeed: 70,
+    backDelay: 800,
+    // loop: true
+    showCursor: false
+}); 
+
 </script>
 </html>
