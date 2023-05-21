@@ -1072,12 +1072,9 @@ header button {
     margin: 0px 0px 24px;
 }
 
-#profile-pic{
-display: none;
-}
-
 #profile-pic {
-    display: none;
+    width: 0px;
+    height: 0px;
 }
 
 #contact-and-photo { 
@@ -1228,6 +1225,7 @@ display: none;
     #profile-pic{
         height: 280px;
         width: 160px;
+        border-radius: 10px;
     }
 
     #contact-and-photo{
@@ -1379,6 +1377,7 @@ display: none;
     #profile-pic{
         height: 280px;
         width: 160px;
+        border-radius: 10px;
     }
 
     #contact-and-photo{
@@ -1529,16 +1528,15 @@ display: none;
     #profile-pic{
         height: 280px;
         width: 160px;
+        border-radius: 10px;
+        margin-right: 200px;
     }
 
     #contact-and-photo{
         display: flex;
+        justify-content: space-between;
 		align-items: center;
 		width: 100%;
-    }
-
-    #contact-block, .profile-pic {
-        flex: 2;
     }
 
     .contact-section h3 {
