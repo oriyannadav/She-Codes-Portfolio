@@ -153,6 +153,10 @@ header button {
     display: none;
 }
 
+.hamburger-button:hover {
+    cursor: pointer;
+}
+
 @media (min-width: 768px) {
     header {
         padding: 0px 50px;
