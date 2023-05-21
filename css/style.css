@@ -433,7 +433,7 @@ header button {
 /* about */
 
 #about-section{
-    height: 89vh;
+    height: 144vh;
     background-color: var(--pink);
     padding: 0px 32px;
     display: flex;
@@ -1047,7 +1047,7 @@ header button {
 
 .contact-section {
     background-color: var(--pink);
-    height: 144vh;
+    height: 176vh;
     padding: 0px 32px;
     display: flex;
     flex-direction: column;
