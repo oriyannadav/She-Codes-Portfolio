@@ -39,10 +39,27 @@ Within the HTML pages, a small script tag is included to incorporate a typing mo
 
 Overall, the implementation of hover and active styles, as well as the usage of the typing motion effect, adds interactivity and visual interest to the website, creating an engaging and immersive user experience.
 
-### Screenshots> Please include the following:
-> - The different pages and features of your website on mobile, tablet and desktop screen sizes (multiple screenshots per page and screen size).
-> - The different features of your site, e.g. if you have hover states, take a screenshot that shows that.
-> - You can do this by saving the images in a folder in your repo, and including them in your readme document with the following Markdown code:
-
 #### Screenshots!
 [Wireframing](screenshots/Wireframe-Portfolio.png)
+[Home page](screenshots/screenshot-home-page.png)
+[Home page hover state](screenshots/screenshot-home-page-hover-state.png)
+[Home page mobile view](screenshots/screenshot-home-page-mobile.png)
+[Home page mobile view navigation dropdown](screenshots/screenshot-home-page-mobile-navigation-dropdown.png)
+[About page](screenshots/screenshot-about-page.png)
+[About page hover state](screenshots/screenshot-about-page-hover-state.png)
+[About page mobile view](screenshots/screenshot-about-page-mobile1.png)
+[About page mobile view](screenshots/screenshot-about-page-mobile2.png)
+[Portfolio page](screenshots/screenshot-portfolio-page1.png)
+[Portfolio page](screenshots/screenshot-portfolio-page-mobile2.png)
+[Portfolio page hover state](screenshots/screenshot-portfolio-page-hover-state.png)
+[Portfolio page mobile view](screenshots/screenshot-portfolio-page-mobile1.png)
+[Portfolio page mobile view](screenshots/screenshot-portfolio-page-mobile2.png)
+[Contact page](screenshots/screenshot-contact-page1.png)
+[Contact page](screenshots/screenshot-contact-page2.png)
+[Contact page hover state](screenshots/screenshot-contact-page-hover-state.png)
+[Contact page Github hover state](screenshots/screenshot-contact-page-github-hover-state.png)
+[Contact page LinkedIn hover state](screenshots/screenshot-contact-page-linkedin-hover-state.png)
+[Contact page Instagram hover state](screenshots/screenshot-contact-page-instagram-hover-state.png)
+[Contact page Facebook hover state](screenshots/screenshot-contact-page-facebook-hover-state.png)
+[Contact page mobile view](screenshots/screenshot-contact-page-mobile1.png)
+[Contact page mobile view](screenshots/screenshot-contact-page-mobile2.png)
