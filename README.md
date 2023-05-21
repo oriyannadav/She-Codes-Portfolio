@@ -40,8 +40,8 @@ Within the HTML pages, a small script tag is included to incorporate a typing mo
 Overall, the implementation of hover and active styles, as well as the usage of the typing motion effect, adds interactivity and visual interest to the website, creating an engaging and immersive user experience.
 
 #### Screenshots!
-[Wireframing](screenshots/Wireframe-Portfolio.png)
-[Home page](screenshots/screenshot-home-page.png)
+- [Wireframing](screenshots/Wireframe-Portfolio.png)
+- [Home page](screenshots/screenshot-home-page.png)
 [Home page hover state](screenshots/screenshot-home-page-hover-state.png)
 [Home page mobile view](screenshots/screenshot-home-page-mobile.png)
 [Home page mobile view navigation dropdown](screenshots/screenshot-home-page-mobile-navigation-dropdown.png)
