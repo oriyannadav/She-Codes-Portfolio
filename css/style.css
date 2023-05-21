@@ -673,18 +673,20 @@ header button {
 /* portfolio */
 
 #portfolio-section {
-    height: 280vh;
+    height: 240vh;
     width: auto;
     background-color: var(--pink);
     padding: 0px 32px;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 #portfolio-section h1 {
-    font-size: 5.5rem;
+    font-size: 4rem;
     font-family: 'DM Serif Display', serif;
     color: var(--black);
 }
@@ -758,7 +760,7 @@ header button {
     width: 50%;
 } 
 
-@media (min-width: 768px) {
+@media (min-width: 821px) {
     #portfolio-section {
         height: 144vh;
         width: auto;
