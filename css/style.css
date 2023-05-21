@@ -1,8 +1,5 @@
 /* Base HTML Styles */
 
-@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ysabeau:wght@100;300;500&display=swap');
 @import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
 @import url('https://fonts.cdnfonts.com/css/proxima-nova-lt');
 @import url('https://fonts.cdnfonts.com/css/helvetica-neue-9');
@@ -32,12 +29,8 @@ html {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    /* font-family: 'Rubik', sans-serif; */
-    /* font-family: 'Gilda Display', serif; */
-    /* font-family: 'Montserrat', sans-serif; */
-    /* font-family: 'Ysabeau', sans-serif; */
-    font-family: "proxima nova", "Helvetica Neue", Helvetica, Arial, Sans-serif;
-    /* font-family: 'DM Serif Display', serif; */
+    /* font-family: "proxima nova", "Helvetica Neue", Helvetica, Arial, Sans-serif; */
+    font-family: 'DM Serif Display', serif;
 }
 
 body {
