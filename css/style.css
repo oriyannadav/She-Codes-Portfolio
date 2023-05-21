@@ -1065,7 +1065,7 @@ header button {
 }
 
 .contact h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     font-family: 'DM Serif Display', serif;
     max-width: 70%;
     color: var(--black);
@@ -1079,10 +1079,9 @@ header button {
     margin: 0px 0px 24px;
 }
 
-/* #profile-pic{
-    height: 280px;
-    width: 160px;
-} */
+#profile-pic{
+display: none;
+}
 
 #profile-pic {
     display: none;
@@ -1112,10 +1111,10 @@ header button {
     align-items: center;
 }
 
-.instagram-icon, .facebook-icon {
+    .gibhub-icon, .linkedin-icon, .instagram-icon, .facebook-icon {
     display: inline-flex;
     flex: 1;
-    padding: 24px 72px 24px 0px;
+    padding: 24px 32px 24px 0px;
 }
 
 .static {
@@ -1262,10 +1261,10 @@ header button {
         align-items: center;
     }
 
-    .instagram-icon, .facebook-icon {
+    .gibhub-icon, .linkedin-icon, .instagram-icon, .facebook-icon {
         display: inline-flex;
         flex: 1;
-        padding: 24px 72px 24px 0px;
+        padding: 24px 40px 24px 0px;
     }
 
     .static {
@@ -1413,9 +1412,9 @@ header button {
         align-items: center;
     }
 
-    .instagram-icon, .facebook-icon {
+    .gibhub-icon, .linkedin-icon, .instagram-icon, .facebook-icon {
         display: inline-flex;
-        padding: 24px 72px 24px 0px;
+        padding: 24px 40px 24px 0px;
     }
 
     .static {
@@ -1553,7 +1552,7 @@ header button {
         padding: 0px 16px;
     }
 
-    #instagram-icon, #facebook-icon, .social-media h3 {
+    #gibhub-icon, #linkedin-icon, #instagram-icon, #facebook-icon, .social-media h3 {
     display: inline;
     }
 
@@ -1566,9 +1565,9 @@ header button {
         align-items: center;
     }
 
-    .instagram-icon, .facebook-icon {
+    .gibhub-icon, .linkedin-icon, .instagram-icon, .facebook-icon {
         display: inline-flex;
-        padding: 24px 72px 24px 0px;
+        padding: 24px 40px 24px 0px;
     }
 
     .static {
