@@ -8,13 +8,20 @@
 @import url('https://fonts.cdnfonts.com/css/helvetica-neue-9');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 
+:root {
+	--black: rgb(22, 19, 19);
+	--pink: rgb(247,230,229);
+	--light-brown: rgb(218,192,190);
+	--dark-brown: rgb(93,81,81);
+}
+
 /* CSS Reset */
 
 html {
 	box-sizing: border-box;
 	font-size: 18px;
 	font-family: 'Proxima Nova', sans-serif;
-	color: rgb(22, 19, 19);
+	color: var(--black);
 	scroll-behavior: smooth;
 }
 
@@ -83,7 +90,7 @@ input, select, textarea {
 /* Header */
 
 header {
-    background-color: rgb(22, 19, 19);
+    background-color: var(--black);
     height: 11vh;
     padding: 0px 32px;
 }
@@ -93,7 +100,7 @@ header {
 }
 
 .mobile-header {
-    background-color: rgb(22, 19, 19);
+    background-color: var(--black);
     height: 11vh;
     display: flex;
     align-items: center;
@@ -101,7 +108,7 @@ header {
 }
 
 .mobile-nav {
-    background-color: rgb(22, 19, 19);
+    background-color: var(--black);
     position: absolute;
     left: 0;
     right: 0;
@@ -123,14 +130,14 @@ header {
 
 .mobile-nav a {
     text-decoration: none;
-    color: rgb(247,230,229);
+    color: var(--pink);
     display: block;
     text-align: end;
     padding: 4px 16px;
 }
 
 nav {
-    color: rgb(22, 19, 19);
+    color: var(--black);
 }
 
 header button {
@@ -156,7 +163,7 @@ header button {
 
     header a {
         text-decoration: none;
-        color: rgb(247,230,229);
+        color: var(--pink);
         font-size: 18px;
     }
 
@@ -203,7 +210,7 @@ header button {
 
     header a {
         text-decoration: none;
-        color: rgb(247,230,229);
+        color: var(--pink);
         font-size: 18px;
     }
 
@@ -242,7 +249,7 @@ header button {
 
     header a {
         text-decoration: none;
-        color: rgb(247,230,229);
+        color: var(--pink);
         font-size: 18px;
     }
 
@@ -294,7 +301,7 @@ header button {
     margin: 0px;
     bottom: 0;
     padding: 200px 0px;
-    color: rgb(247,230,229);
+    color: var(--pink);
 }  
 
 #hero footer {
@@ -306,7 +313,7 @@ header button {
     width: 100%;
     text-align: center;
     padding: 16px;
-    color: rgb(247,230,229);
+    color: var(--pink);
     }
 
 @media (min-width: 768px) {
@@ -325,7 +332,7 @@ header button {
         margin: 0px;
         bottom: 0;
         padding: 200px 0px;
-        color: rgb(247,230,229);
+        color: var(--pink);
     } 
 
     #hero footer {
@@ -337,7 +344,7 @@ header button {
         width: 100%;
         text-align: center;
         padding: 16px;
-        color: rgb(247,230,229);
+        color: var(--pink);
         }
 }
 
@@ -357,7 +364,7 @@ header button {
         margin: 0px;
         bottom: 0;
         padding: 200px 0px;
-        color: rgb(247,230,229);
+        color: var(--pink);
         position: relative;
     } 
 
@@ -370,7 +377,7 @@ header button {
     width: 100%;
     text-align: center;
     padding: 16px;
-    color: rgb(247,230,229);
+    color: var(--pink);
     }
 }
 
@@ -390,7 +397,7 @@ header button {
         margin: 0px;
         bottom: 0;
         padding: 200px 0px;
-        color: rgb(247,230,229);
+        color: var(--pink);
         position: relative;
     } 
 
@@ -403,7 +410,7 @@ header button {
         width: 100%;
         text-align: center;
         padding: 16px;
-        color: rgb(247,230,229);
+        color: var(--pink);
         }
 }
 
@@ -423,7 +430,7 @@ header button {
 
 #about-section{
     height: 89vh;
-    background-color: rgb(247,230,228);
+    background-color: var(--pink);
     padding: 0px 32px;
     display: flex;
     justify-content: flex-start;
@@ -434,13 +441,13 @@ header button {
     font-size: 5rem;
     font-family: 'DM Serif Display', serif;
     max-width: 70%;
-    color: rgb(22, 19, 19);
+    color: var(--black);
 }
 
 #about-section h2 {
     font-family: 'Proxima Nova Lt', "Helvetica Neue", Helvetica, Arial, Sans-serif;
     font-size: 1.5rem;
-    color: rgb(93,81,81);
+    color: var(--dark-brown);
     padding: 8px 0px;
     margin: 0px 0px 24px;
     font-weight: normal;
@@ -482,7 +489,7 @@ header button {
 @media (min-width: 768px) {
     #about-section {
         height: 89vh;
-        background-color: rgb(247,230,228);
+        background-color: var(--pink);
         padding: 0px 50px;
         display: flex;
         justify-content: flex-start;
@@ -492,13 +499,13 @@ header button {
     #about-section h1 {
         font-size: 5.5rem;
         font-family: 'DM Serif Display', serif;
-        color: rgb(22, 19, 19);
+        color: var(--black);
     }
 
     #about-section h2 {
         font-family: 'Proxima Nova Lt', "Helvetica Neue", Helvetica, Arial, Sans-serif;
         font-size: 2rem;
-        color: rgb(93,81,81);
+        color: var(--dark-brown);
         padding: 8px 0px;
         margin: 0px 0px 24px;
         font-weight: normal;
@@ -542,7 +549,7 @@ header button {
 @media (min-width: 992px) {
     #about-section{
         height: 89vh;
-        background-color: rgb(247,230,228);
+        background-color: var(--pink);
         padding: 0px 100px;
         display: flex;
         justify-content: flex-start;
@@ -552,13 +559,13 @@ header button {
     #about-section h1 {
         font-size: 5.5rem;
         font-family: 'DM Serif Display', serif;
-        color: rgb(22, 19, 19);
+        color: var(--black);
     }
 
     #about-section h2 {
         font-family: 'Proxima Nova Lt', "Helvetica Neue", Helvetica, Arial, Sans-serif;
         font-size: 2rem;
-        color: rgb(93,81,81);
+        color: var(--dark-brown);
         padding: 8px 0px;
         margin: 0px 0px 24px;
         font-weight: normal;
@@ -602,7 +609,7 @@ header button {
 @media (min-width: 1280px) {
     #about-section {
         height: 89vh;
-        background-color: rgb(247,230,228);
+        background-color: var(--pink);
         padding: 0px 200px;
         display: flex;
         justify-content: flex-start;
@@ -612,13 +619,13 @@ header button {
     #about-section h1 {
         font-size: 5.5rem;
         font-family: 'DM Serif Display', serif;
-        color: rgb(22, 19, 19);
+        color: var(--black);
     }
 
     #about-section h2 {
         font-family: 'Proxima Nova Lt', "Helvetica Neue", Helvetica, Arial, Sans-serif;
         font-size: 2rem;
-        color: rgb(93,81,81);
+        color: var(--dark-brown);
         padding: 8px 0px;
         margin: 0px 0px 24px;
         font-weight: normal;
@@ -664,7 +671,7 @@ header button {
 #portfolio-section {
     height: 280vh;
     width: auto;
-    background-color: rgb(247,230,228);
+    background-color: var(--pink);
     padding: 0px 32px;
     display: flex;
     justify-content: center;
@@ -675,13 +682,13 @@ header button {
 #portfolio-section h1 {
     font-size: 5.5rem;
     font-family: 'DM Serif Display', serif;
-    color: rgb(22, 19, 19);
+    color: var(--black);
 }
 
 #portfolio-section h2 {
     font-family: 'Proxima Nova Lt', "Helvetica Neue", Helvetica, Arial, Sans-serif;
     font-size: 1.5rem;
-    color: rgb(93,81,81);
+    color: var(--dark-brown);
     padding: 8px 0px 4px 0px;
     margin: 0px 0px 24px;
     font-weight: normal;
@@ -720,21 +727,21 @@ header button {
 }
 
 .diploma {
-    background-color: rgb(218,192,190);
+    background-color: var(--light-brown);
     border-radius: 10px;
     padding: 20px 50px;
     margin-bottom: 25px;
 }
 
 .shecodes-web {
-    background-color: rgb(218,192,190);
+    background-color: var(--light-brown);
     border-radius: 10px;
     padding: 20px 50px;
     margin-bottom: 25px;
 }
 
 .python {
-    background-color: rgb(218,192,190);
+    background-color: var(--light-brown);
     border-radius: 10px;
     padding: 45px 50px;
 }
@@ -751,7 +758,7 @@ header button {
     #portfolio-section {
         height: 144vh;
         width: auto;
-        background-color: rgb(247,230,228);
+        background-color: var(--pink);
         padding: 0px 50px;
         display: flex;
         flex-wrap: nowrap;
@@ -763,13 +770,13 @@ header button {
     #portfolio-section h1 {
         font-size: 5.5rem;
         font-family: 'DM Serif Display', serif;
-        color: rgb(22, 19, 19);
+        color: var(--black);
     }
 
     #portfolio-section h2 {
         font-family: 'Proxima Nova Lt', "Helvetica Neue", Helvetica, Arial, Sans-serif;
         font-size: 1.5rem;
-        color: rgb(93,81,81);
+        color: var(--dark-brown);
         padding: 8px 0px 4px 0px;
         margin: 0px 0px 24px;
         font-weight: normal;
@@ -814,21 +821,21 @@ header button {
     }
 
     .diploma {
-        background-color: rgb(218,192,190);
+        background-color: var(--light-brown);
         border-radius: 10px;
         padding: 20px 50px;
         margin: 0px 25px 0px 0px;
     }
 
     .shecodes-web {
-        background-color: rgb(218,192,190);
+        background-color: var(--light-brown);
         border-radius: 10px;
         padding: 20px 50px;
         margin: 0px 25px 0px 0px;
     }
 
     .python {
-        background-color: rgb(218,192,190);
+        background-color: var(--light-brown);
         border-radius: 10px;
         padding: 45px 50px;
     }
@@ -846,7 +853,7 @@ header button {
     #portfolio-section {
         height: 144vh;
         width: auto;
-        background-color: rgb(247,230,228);
+        background-color: var(--pink);
         padding: 0px 100px;
         display: flex;
         justify-content: space-evenly;
@@ -857,13 +864,13 @@ header button {
     #portfolio-section h1 {
         font-size: 5.5rem;
         font-family: 'DM Serif Display', serif;
-        color: rgb(22, 19, 19);
+        color: var(--black);
     }
 
     #portfolio-section h2 {
         font-family: 'Proxima Nova Lt', "Helvetica Neue", Helvetica, Arial, Sans-serif;
         font-size: 1.5rem;
-        color: rgb(93,81,81);
+        color: var(--dark-brown);
         padding: 8px 0px 4px 0px;
         margin: 0px 0px 24px;
         font-weight: normal;
@@ -908,21 +915,21 @@ header button {
     }
 
     .diploma {
-        background-color: rgb(218,192,190);
+        background-color: var(--light-brown);
         border-radius: 10px;
         padding: 20px 50px;
         margin: 0px 25px 0px 0px;
     }
 
     .shecodes-web {
-        background-color: rgb(218,192,190);
+        background-color: var(--light-brown);
         border-radius: 10px;
         padding: 20px 50px;
         margin: 0px 25px 0px 0px;
     }
 
     .python {
-        background-color: rgb(218,192,190);
+        background-color: var(--light-brown);
         border-radius: 10px;
         padding: 45px 50px;
     }
@@ -940,7 +947,7 @@ header button {
     #portfolio-section {
         height: 144vh;
         width: auto;
-        background-color: rgb(247,230,228);
+        background-color: var(--pink);
         padding: 0px 200px;
         display: flex;
         justify-content: space-evenly;
@@ -951,13 +958,13 @@ header button {
     #portfolio-section h1 {
         font-size: 5.5rem;
         font-family: 'DM Serif Display', serif;
-        color: rgb(22, 19, 19);
+        color: var(--black);
     }
 
     #portfolio-section h2 {
         font-family: 'Proxima Nova Lt', "Helvetica Neue", Helvetica, Arial, Sans-serif;
         font-size: 2rem;
-        color: rgb(93,81,81);
+        color: var(--dark-brown);
         padding: 8px 0px 4px 0px;
         margin: 0px 0px 24px;
         font-weight: normal;
@@ -1002,21 +1009,21 @@ header button {
     }
 
     .diploma {
-        background-color: rgb(218,192,190);
+        background-color: var(--light-brown);
         border-radius: 10px;
         padding: 20px 50px;
         margin: 0px 25px 0px 0px;
     }
 
     .shecodes-web {
-        background-color: rgb(218,192,190);
+        background-color: var(--light-brown);
         border-radius: 10px;
         padding: 20px 50px;
         margin: 0px 25px 0px 0px;
     }
 
     .python {
-        background-color: rgb(218,192,190);
+        background-color: var(--light-brown);
         border-radius: 10px;
         padding: 45px 50px;
     }
@@ -1033,7 +1040,7 @@ header button {
 /* contact */
 
 .contact-section {
-    background-color: rgb(247,230,229);
+    background-color: var(--pink);
     height: 144vh;
     padding: 0px 32px;
     display: flex;
@@ -1055,13 +1062,13 @@ header button {
     font-size: 5rem;
     font-family: 'DM Serif Display', serif;
     max-width: 70%;
-    color: rgb(22, 19, 19);
+    color: var(--black);
 }
 
 .contact p {
     font-family: 'Proxima Nova Lt', sans-serif;
     font-size: 1.5rem;
-    color: rgb(93,81,81);
+    color: var(--dark-brown);
     line-height: 1.5;
     margin: 0px 0px 24px;
 }
@@ -1092,7 +1099,7 @@ header button {
 
 .social-media a {
     text-decoration: none;
-    color: rgb(22, 19, 19);
+    color: var(--black);
     cursor: pointer;
     display: flex;
     justify-content: flex-start;
@@ -1107,7 +1114,7 @@ header button {
 
 .static {
     position: absolute;
-    background-color: rgb(247,230,229);
+    background-color: var(--pink);
 }
 
 .static:hover {
@@ -1122,13 +1129,13 @@ header button {
 .form h2{
     font-family: 'Proxima Nova Lt', "Helvetica Neue", Helvetica, Arial, Sans-serif;
     font-size: 2rem;
-    color: rgb(93,81,81);
+    color: var(--dark-brown);
     padding: 8px 0px;
     font-weight: normal;
 }
 
 .form label {
-    color: rgb(22, 19, 19);
+    color: var(--black);
 }
 
 .block-section, #textarea-section {
@@ -1174,8 +1181,8 @@ header button {
 }
 
 .form input[type="submit"] {
-    background-color: rgb(22, 19, 19);
-    color: rgb(247,230,229);
+    background-color: var(--black);
+    color: var(--pink);
     width: 240px;
     height: 56px;
     border: 0;
@@ -1187,7 +1194,7 @@ header button {
 
 @media (min-width: 768px) {
     .contact-section {
-        background-color: rgb(247,230,229);
+        background-color: var(--pink);
         height: 144vh;
         padding: 0px 50px;
         display: flex;
@@ -1209,13 +1216,13 @@ header button {
         font-size: 5.5rem;
         font-family: 'DM Serif Display', serif;
         max-width: 70%;
-        color: rgb(22, 19, 19);
+        color: var(--black);
     }
 
     .contact p {
         font-family: 'Proxima Nova Lt', sans-serif;
         font-size: 1.5rem;
-        color: rgb(93,81,81);
+        color: var(--dark-brown);
         line-height: 1.5;
         margin: 0px 0px 24px;
     }
@@ -1242,7 +1249,7 @@ header button {
 
     .social-media a {
         text-decoration: none;
-        color: rgb(22, 19, 19);
+        color: var(--black);
         cursor: pointer;
         display: flex;
         justify-content: flex-start;
@@ -1257,7 +1264,7 @@ header button {
 
     .static {
         position: absolute;
-        background-color: rgb(247,230,229);
+        background-color: var(--pink);
     }
     
     .static:hover {
@@ -1272,13 +1279,13 @@ header button {
     .form h2{
         font-family: 'Proxima Nova Lt', "Helvetica Neue", Helvetica, Arial, Sans-serif;
         font-size: 2rem;
-        color: rgb(93,81,81);
+        color: var(--dark-brown);
         padding: 8px 0px;
         font-weight: normal;
     }
 
     .form label {
-        color: rgb(22, 19, 19);
+        color: var(--black);
     }
 
     .block-section, #textarea-section {
@@ -1324,8 +1331,8 @@ header button {
     }
 
     .form input[type="submit"] {
-        background-color: rgb(22, 19, 19);
-        color: rgb(247,230,229);
+        background-color: var(--black);
+        color: var(--pink);
         width: 240px;
         height: 56px;
         border: 0;
@@ -1338,7 +1345,7 @@ header button {
 
 @media (min-width: 992px) {
     .contact-section {
-        background-color: rgb(247,230,229);
+        background-color: var(--pink);
         height: 144vh;
         padding: 0px 100px;
         display: flex;
@@ -1360,13 +1367,13 @@ header button {
         font-size: 5.5rem;
         font-family: 'DM Serif Display', serif;
         max-width: 70%;
-        color: rgb(22, 19, 19);
+        color: var(--black);
     }
 
     .contact p {
         font-family: 'Proxima Nova Lt', sans-serif;
         font-size: 1.5rem;
-        color: rgb(93,81,81);
+        color: var(--dark-brown);
         line-height: 1.5;
         margin: 0px 0px 24px;
     }
@@ -1393,7 +1400,7 @@ header button {
 
     .social-media a {
         text-decoration: none;
-        color: rgb(22, 19, 19);
+        color: var(--black);
         cursor: pointer;
         display: flex;
         justify-content: flex-start;
@@ -1407,7 +1414,7 @@ header button {
 
     .static {
         position: absolute;
-        background-color: rgb(247,230,229);
+        background-color: var(--pink);
     }
     
     .static:hover {
@@ -1422,13 +1429,13 @@ header button {
     .form h2{
         font-family: 'Proxima Nova Lt', "Helvetica Neue", Helvetica, Arial, Sans-serif;
         font-size: 2rem;
-        color: rgb(93,81,81);
+        color: var(--dark-brown);
         padding: 8px 0px;
         font-weight: normal;
     }
 
     .form label {
-        color: rgb(22, 19, 19);
+        color: var(--black);
     }
 
     .block-section, #textarea-section {
@@ -1474,8 +1481,8 @@ header button {
     }
 
     .form input[type="submit"] {
-        background-color: rgb(22, 19, 19);
-        color: rgb(247,230,229);
+        background-color: var(--black);
+        color: var(--pink);
         width: 240px;
         height: 56px;
         border: 0;
@@ -1488,7 +1495,7 @@ header button {
 
 @media (min-width: 1280px) {
     .contact-section {
-        background-color: rgb(247,230,229);
+        background-color: var(--pink);
         height: 144vh;
         padding: 0px 200px;
         display: flex;
@@ -1510,13 +1517,13 @@ header button {
         font-size: 5.5rem;
         font-family: 'DM Serif Display', serif;
         max-width: 70%;
-        color: rgb(22, 19, 19);
+        color: var(--black);
     }
 
     .contact p {
         font-family: 'Proxima Nova Lt', sans-serif;
         font-size: 1.5rem;
-        color: rgb(93,81,81);
+        color: var(--dark-brown);
         line-height: 1.5;
         margin: 0px 0px 24px;
     }
@@ -1546,7 +1553,7 @@ header button {
 
     .social-media a {
         text-decoration: none;
-        color: rgb(22, 19, 19);
+        color: var(--black);
         cursor: pointer;
         display: flex;
         justify-content: flex-start;
@@ -1560,7 +1567,7 @@ header button {
 
     .static {
         position: absolute;
-        background-color: rgb(247,230,229);
+        background-color: var(--pink);
     }
     
     .static:hover {
@@ -1575,13 +1582,13 @@ header button {
     .form h2{
         font-family: 'Proxima Nova Lt', "Helvetica Neue", Helvetica, Arial, Sans-serif;
         font-size: 2rem;
-        color: rgb(93,81,81);
+        color: var(--dark-brown);
         padding: 8px 0px;
         font-weight: normal;
     }
 
     .form label {
-        color: rgb(22, 19, 19);
+        color: var(--black);
     }
 
     .block-section, #textarea-section {
@@ -1627,8 +1634,8 @@ header button {
     }
 
     .form input[type="submit"] {
-        background-color: rgb(22, 19, 19);
-        color: rgb(247,230,229);
+        background-color: var(--black);
+        color: var(--pink);
         width: 240px;
         height: 56px;
         border: 0;
@@ -1642,7 +1649,7 @@ header button {
 /* Footer */
 
 .footer {
-    background-color: rgb(247,230,229);
+    background-color: var(--pink);
     font-family: 'Proxima Nova Lt', sans-serif;
     font-weight: 500;
     left: 0;
