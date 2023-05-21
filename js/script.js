@@ -6,5 +6,5 @@ hamburgerButton.addEventListener("click", () => {
 })
 
 const video = document.querySelector("video");
-// Slow it to 50% speed
+// Slow it to 55% speed
 video.playbackRate = 0.55;
