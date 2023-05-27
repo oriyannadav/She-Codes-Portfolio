@@ -795,11 +795,6 @@ header button {
         padding-top: 20px;
     }
 
-    .portfolio-block-section {
-        display: flex;
-        justify-content: center;
-    }
-
     #article-height {
         display: flex;
         flex-wrap: wrap;
@@ -887,11 +882,6 @@ header button {
         padding-top: 20px;
     }
 
-    .portfolio-block-section {
-        display: flex;
-        justify-content: center;
-    }
-
     #article-height {
         display: flex;
         flex-wrap: wrap;
@@ -977,11 +967,6 @@ header button {
         margin-bottom: 16px;
         text-align: center;
         padding-top: 20px;
-    }
-
-    .portfolio-block-section {
-        display: flex;
-        justify-content: center;
     }
 
     #article-height {
