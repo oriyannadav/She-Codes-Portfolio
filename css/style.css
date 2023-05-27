@@ -105,12 +105,19 @@ header {
     position: absolute;
     left: 0;
     right: 0;
-    width: 100%;
     height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    transition: 1.5s ease-in-out, visibility 1s;
+    visibility: visible;
+}
+
+.mobile-nav.display-none {
+    transform: translateY(-400px);
+    transition: transform 1.5s ease-in-out, visibility 0s;
+    visibility: visible;
 }
 
 .mobile-nav ul li {
@@ -142,9 +149,9 @@ header button {
     width: auto;
 } 
 
-.display-none {
+/* .display-none {
     display: none;
-}
+} */
 
 .hamburger-button:hover {
     cursor: pointer;
