@@ -88,9 +88,6 @@ input, select, textarea {
 header {
     background-color: var(--black);
     height: 11vh;
-    position: absolute;
-    right: 0;
-    left: 0;
 }
 
 .desktop-nav {
@@ -104,8 +101,8 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0px 32px;
-    position: absolute;
-    z-index: 1000;
+    position: relative;
+    z-index: 1;
     left: 0;
     right: 0;
 }
@@ -114,7 +111,6 @@ header {
     background-color: var(--black);
     left: 0;
     right: 0;
-    margin-top: 11vh;
     height: 300px;
     display: flex;
     justify-content: center;
