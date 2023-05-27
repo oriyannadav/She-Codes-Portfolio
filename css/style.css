@@ -652,7 +652,7 @@ header button {
 /* portfolio */
 
 #portfolio-section {
-    height: 200vh;
+    height: 224vh;
     width: auto;
     background-color: var(--pink);
     padding: 0px 32px;
@@ -662,6 +662,7 @@ header button {
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
+    padding-bottom: 32px;
 }
 
 #portfolio-section h1 {
@@ -685,8 +686,14 @@ header button {
 
 #portfolio-examples article {
     padding: 32px 16px;
-    max-width: 350px;
-    min-width: 250px;
+    max-width: 450px;
+    min-width: 350px;
+    transition: all 0.6s ease;
+}
+
+#portfolio-examples article:hover {
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
 }
 
 #portfolio-examples article h2 {
