@@ -117,7 +117,7 @@ header {
     align-items: center;
     text-align: center;
     position: relative;
-    transition: 2s ease-in-out, visibility 1s;
+    transition: 1.8s ease-in-out, visibility 1s;
     visibility: visible;
 }
 
@@ -154,11 +154,7 @@ header button {
 #logo {
     height: 64px;
     width: auto;
-} 
-
-/* .display-none {
-    display: none;
-} */
+}
 
 .hamburger-button:hover {
     cursor: pointer;
@@ -432,7 +428,7 @@ header button {
 /* about */
 
 #about-section{
-    height: 144vh;
+    height: 100vh;
     background-color: var(--pink);
     padding: 0px 32px;
     display: flex;
@@ -656,7 +652,7 @@ header button {
 /* portfolio */
 
 #portfolio-section {
-    height: 240vh;
+    height: 200vh;
     width: auto;
     background-color: var(--pink);
     padding: 0px 32px;
@@ -741,7 +737,7 @@ header button {
     width: 50%;
 } 
 
-@media (min-width: 821px) {
+@media (min-width: 768px) {
     #portfolio-section {
         height: 144vh;
         width: auto;
