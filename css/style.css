@@ -88,7 +88,9 @@ input, select, textarea {
 header {
     background-color: var(--black);
     height: 11vh;
-    padding: 0px 32px;
+    position: absolute;
+    right: 0;
+    left: 0;
 }
 
 .desktop-nav {
@@ -101,19 +103,25 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0px 32px;
+    position: absolute;
+    z-index: 1000;
+    left: 0;
+    right: 0;
 }
 
 .mobile-nav {
     background-color: var(--black);
-    position: absolute;
     left: 0;
     right: 0;
+    margin-top: 11vh;
     height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    transition: 1.5s ease-in-out, visibility 1s;
+    position: relative;
+    transition: 2s ease-in-out, visibility 1s;
     visibility: visible;
 }
 
