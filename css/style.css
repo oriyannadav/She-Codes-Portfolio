@@ -17,7 +17,7 @@
 html {
 	box-sizing: border-box;
 	font-size: 18px;
-	font-family: 'Proxima Nova', sans-serif;
+	font-family: 'Proxima Nova Lt',"Helvetica Neue", Helvetica, Arial, Sans-serif;
 	color: var(--black);
 	scroll-behavior: smooth;
 }
@@ -28,9 +28,12 @@ html {
 	box-sizing: inherit;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    /* font-family: "proxima nova", "Helvetica Neue", Helvetica, Arial, Sans-serif; */
+h1 {
     font-family: 'DM Serif Display', serif;
+}
+
+h2, h3, h4, h5, h6, p {
+    font-family: 'Proxima Nova Lt', "Helvetica Neue", Helvetica, Arial, Sans-serif;
 }
 
 body {
@@ -300,7 +303,6 @@ header button {
 
 #hero p {
     font-size: 1.7rem;
-    font-family: 'Proxima Nova Lt', sans-serif;
     font-weight: 500;
     margin: 0px;
     bottom: 0;
@@ -309,7 +311,6 @@ header button {
 }  
 
 #hero footer {
-    font-family: 'Proxima Nova Lt', sans-serif;
     font-weight: 500;
     position: absolute;
     left: 0;
@@ -331,7 +332,6 @@ header button {
 
     #hero p {
         font-size: 1.9rem;
-        font-family: 'Proxima Nova Lt', sans-serif;
         font-weight: 500;
         margin: 0px;
         bottom: 0;
@@ -340,7 +340,6 @@ header button {
     } 
 
     #hero footer {
-        font-family: 'Proxima Nova Lt', sans-serif;
         font-weight: 500;
         position: absolute;
         left: 0;
@@ -363,7 +362,6 @@ header button {
 
     #hero p {
         font-size: 2.1rem;
-        font-family: 'Proxima Nova Lt', sans-serif;
         font-weight: 500;
         margin: 0px;
         bottom: 0;
@@ -373,7 +371,6 @@ header button {
     } 
 
     #hero footer {
-    font-family: 'Proxima Nova Lt', sans-serif;
     font-weight: 500;
     position: absolute;
     left: 0;
@@ -396,7 +393,6 @@ header button {
 
     #hero p {
         font-size: 2.3rem;
-        font-family: 'Proxima Nova Lt', sans-serif;
         font-weight: 500;
         margin: 0px;
         bottom: 0;
@@ -406,7 +402,6 @@ header button {
     } 
 
     #hero footer {
-        font-family: 'Proxima Nova Lt', sans-serif;
         font-weight: 500;
         position: absolute;
         left: 0;
@@ -443,13 +438,11 @@ header button {
 
 #about-section h1 {
     font-size: 5rem;
-    font-family: 'DM Serif Display', serif;
     max-width: 70%;
     color: var(--black);
 }
 
 #about-section h2 {
-    font-family: 'Proxima Nova Lt', "Helvetica Neue", Helvetica, Arial, Sans-serif;
     font-size: 1.5rem;
     color: var(--dark-brown);
     padding: 8px 0px;
@@ -460,7 +453,6 @@ header button {
 }
 
 #about-section p {
-    font-family: 'Proxima Nova Lt', "Helvetica Neue", Helvetica, Arial, Sans-serif;
     font-size: 20px;
     padding: 4px 0px;
     margin: 0px 0px 24px;
@@ -470,7 +462,6 @@ header button {
 }
 
 #about-section footer {
-    font-family: 'Proxima Nova Lt', sans-serif;
     font-weight: 500;
     position: absolute;
     left: 0;
@@ -502,12 +493,10 @@ header button {
 
     #about-section h1 {
         font-size: 5.5rem;
-        font-family: 'DM Serif Display', serif;
         color: var(--black);
     }
 
     #about-section h2 {
-        font-family: 'Proxima Nova Lt', "Helvetica Neue", Helvetica, Arial, Sans-serif;
         font-size: 2rem;
         color: var(--dark-brown);
         padding: 8px 0px;
@@ -519,7 +508,6 @@ header button {
     }
 
     #about-section p {
-        font-family: 'Proxima Nova Lt', "Helvetica Neue", Helvetica, Arial, Sans-serif;
         font-size: 20px;
         padding: 4px 0px;
         margin: 0px 0px 24px;
@@ -529,7 +517,6 @@ header button {
     }
 
     #about-section footer {
-        font-family: 'Proxima Nova Lt', sans-serif;
         font-weight: 500;
         position: absolute;
         left: 0;
@@ -562,12 +549,10 @@ header button {
 
     #about-section h1 {
         font-size: 5.5rem;
-        font-family: 'DM Serif Display', serif;
         color: var(--black);
     }
 
     #about-section h2 {
-        font-family: 'Proxima Nova Lt', "Helvetica Neue", Helvetica, Arial, Sans-serif;
         font-size: 2rem;
         color: var(--dark-brown);
         padding: 8px 0px;
@@ -579,7 +564,6 @@ header button {
     }
 
     #about-section p {
-        font-family: 'Proxima Nova Lt', "Helvetica Neue", Helvetica, Arial, Sans-serif;
         font-size: 20px;
         padding: 4px 0px;
         margin: 0px 0px 24px;
@@ -589,7 +573,6 @@ header button {
     }
 
     #about-section footer {
-        font-family: 'Proxima Nova Lt', sans-serif;
         font-weight: 500;
         position: absolute;
         left: 0;
@@ -622,12 +605,10 @@ header button {
 
     #about-section h1 {
         font-size: 5.5rem;
-        font-family: 'DM Serif Display', serif;
         color: var(--black);
     }
 
     #about-section h2 {
-        font-family: 'Proxima Nova Lt', "Helvetica Neue", Helvetica, Arial, Sans-serif;
         font-size: 2rem;
         color: var(--dark-brown);
         padding: 8px 0px;
@@ -639,7 +620,6 @@ header button {
     }
 
     #about-section p {
-        font-family: 'Proxima Nova Lt', "Helvetica Neue", Helvetica, Arial, Sans-serif;
         font-size: 20px;
         padding: 4px 0px;
         margin: 0px 0px 24px;
@@ -649,7 +629,6 @@ header button {
     }
 
     #about-section footer {
-        font-family: 'Proxima Nova Lt', sans-serif;
         font-weight: 500;
         position: absolute;
         left: 0;
@@ -687,12 +666,10 @@ header button {
 
 #portfolio-section h1 {
     font-size: 4rem;
-    font-family: 'DM Serif Display', serif;
     color: var(--black);
 }
 
 #portfolio-section h2 {
-    font-family: 'Proxima Nova Lt', "Helvetica Neue", Helvetica, Arial, Sans-serif;
     font-size: 1.5rem;
     color: var(--dark-brown);
     padding: 8px 0px 4px 0px;
@@ -775,12 +752,10 @@ header button {
 
     #portfolio-section h1 {
         font-size: 5.5rem;
-        font-family: 'DM Serif Display', serif;
         color: var(--black);
     }
 
     #portfolio-section h2 {
-        font-family: 'Proxima Nova Lt', "Helvetica Neue", Helvetica, Arial, Sans-serif;
         font-size: 1.5rem;
         color: var(--dark-brown);
         padding: 8px 0px 4px 0px;
@@ -869,12 +844,10 @@ header button {
 
     #portfolio-section h1 {
         font-size: 5.5rem;
-        font-family: 'DM Serif Display', serif;
         color: var(--black);
     }
 
     #portfolio-section h2 {
-        font-family: 'Proxima Nova Lt', "Helvetica Neue", Helvetica, Arial, Sans-serif;
         font-size: 1.5rem;
         color: var(--dark-brown);
         padding: 8px 0px 4px 0px;
@@ -963,12 +936,10 @@ header button {
 
     #portfolio-section h1 {
         font-size: 5.5rem;
-        font-family: 'DM Serif Display', serif;
         color: var(--black);
     }
 
     #portfolio-section h2 {
-        font-family: 'Proxima Nova Lt', "Helvetica Neue", Helvetica, Arial, Sans-serif;
         font-size: 2rem;
         color: var(--dark-brown);
         padding: 8px 0px 4px 0px;
@@ -1066,13 +1037,11 @@ header button {
 
 .contact h1 {
     font-size: 4rem;
-    font-family: 'DM Serif Display', serif;
     max-width: 70%;
     color: var(--black);
 }
 
 .contact p {
-    font-family: 'Proxima Nova Lt', sans-serif;
     font-size: 1.5rem;
     color: var(--dark-brown);
     line-height: 1.5;
@@ -1129,7 +1098,6 @@ header button {
 }
 
 .form h2{
-    font-family: 'Proxima Nova Lt', "Helvetica Neue", Helvetica, Arial, Sans-serif;
     font-size: 2rem;
     color: var(--dark-brown);
     padding: 8px 0px;
@@ -1166,7 +1134,6 @@ header button {
     width: 100%;
     color: rgb(51,51,51);
     font-size: 1.5rem;
-    font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
     padding: 36px 16px;
     vertical-align: middle;
 }
@@ -1216,13 +1183,11 @@ header button {
 
     .contact h1 {
         font-size: 5.5rem;
-        font-family: 'DM Serif Display', serif;
         max-width: 70%;
         color: var(--black);
     }
 
     .contact p {
-        font-family: 'Proxima Nova Lt', sans-serif;
         font-size: 1.5rem;
         color: var(--dark-brown);
         line-height: 1.5;
@@ -1280,7 +1245,6 @@ header button {
     }
 
     .form h2{
-        font-family: 'Proxima Nova Lt', "Helvetica Neue", Helvetica, Arial, Sans-serif;
         font-size: 2rem;
         color: var(--dark-brown);
         padding: 8px 0px;
@@ -1317,7 +1281,6 @@ header button {
         width: 100%;
         color: rgb(51,51,51);
         font-size: 1.5rem;
-        font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
         padding: 36px 16px;
         vertical-align: middle;
     }
@@ -1368,13 +1331,11 @@ header button {
 
     .contact h1 {
         font-size: 5.5rem;
-        font-family: 'DM Serif Display', serif;
         max-width: 70%;
         color: var(--black);
     }
 
     .contact p {
-        font-family: 'Proxima Nova Lt', sans-serif;
         font-size: 1.5rem;
         color: var(--dark-brown);
         line-height: 1.5;
@@ -1431,7 +1392,6 @@ header button {
     }
 
     .form h2{
-        font-family: 'Proxima Nova Lt', "Helvetica Neue", Helvetica, Arial, Sans-serif;
         font-size: 2rem;
         color: var(--dark-brown);
         padding: 8px 0px;
@@ -1468,7 +1428,6 @@ header button {
         width: 100%;
         color: rgb(51,51,51);
         font-size: 1.5rem;
-        font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
         padding: 36px 16px;
         vertical-align: middle;
     }
@@ -1519,13 +1478,11 @@ header button {
 
     .contact h1 {
         font-size: 5.5rem;
-        font-family: 'DM Serif Display', serif;
         max-width: 70%;
         color: var(--black);
     }
 
     .contact p {
-        font-family: 'Proxima Nova Lt', sans-serif;
         font-size: 1.5rem;
         color: var(--dark-brown);
         line-height: 1.5;
@@ -1582,8 +1539,7 @@ header button {
         padding-top: 104px;
     }
 
-    .form h2{
-        font-family: 'Proxima Nova Lt', "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    .form h2 {
         font-size: 2rem;
         color: var(--dark-brown);
         padding: 8px 0px;
@@ -1620,7 +1576,6 @@ header button {
         width: 100%;
         color: rgb(51,51,51);
         font-size: 1.5rem;
-        font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
         padding: 36px 16px;
         vertical-align: middle;
     }
@@ -1653,7 +1608,6 @@ header button {
 
 .footer {
     background-color: var(--pink);
-    font-family: 'Proxima Nova Lt', sans-serif;
     font-weight: 500;
     left: 0;
     bottom: 0;
