@@ -1086,15 +1086,14 @@ header button {
     color: var(--black);
 }
 
-.block-section, #textarea-section {
+/* .block-section, #textarea-section {
     display: inline-block;
     width: 50%;
     margin: 40px auto;
-}
+} */
 
-.block-section {
-    float: left;
-    padding-right: 32px;
+#textarea-section {
+    padding: 24px 0;
 }
 
 #your-name, #your-email, #your-message {
@@ -1142,7 +1141,7 @@ header button {
 @media (min-width: 768px) {
     .contact-section {
         background-color: var(--pink);
-        height: 144vh;
+        height: 168vh;
         padding: 0px 50px;
         display: flex;
         flex-direction: column;
@@ -1237,6 +1236,7 @@ header button {
         display: inline-block;
         width: 50%;
         margin: 40px auto;
+        padding: 0px;
     }
 
     .block-section {
