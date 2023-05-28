@@ -652,7 +652,7 @@ header button {
 /* portfolio */
 
 #portfolio-section {
-    height: 224vh;
+    height: 240vh;
     width: auto;
     background-color: var(--pink);
     padding: 0px 32px;
@@ -662,7 +662,6 @@ header button {
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-    padding-bottom: 32px;
 }
 
 #portfolio-section h1 {
@@ -682,12 +681,14 @@ header button {
 
 #portfolio-examples {
     display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 #portfolio-examples article {
     padding: 32px 16px;
     max-width: 450px;
-    min-width: 350px;
+    min-width: 150px;
     transition: all 0.6s ease;
 }
 
@@ -708,34 +709,21 @@ header button {
     padding-top: 20px;
 }
 
-#article-height {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
 .diploma {
     background-color: var(--light-brown);
     border-radius: 10px;
     padding: 20px 50px;
-    margin-bottom: 25px;
 }
 
 .shecodes-web {
     background-color: var(--light-brown);
     border-radius: 10px;
-    padding: 20px 50px;
-    margin-bottom: 25px;
 }
 
 .python {
     background-color: var(--light-brown);
     border-radius: 10px;
-    padding: 45px 50px;
 }
-
 
 #portfolio-examples .photos {
     display: block;
@@ -746,15 +734,15 @@ header button {
 
 @media (min-width: 768px) {
     #portfolio-section {
-        height: 144vh;
+        height: 224vh;
         width: auto;
         background-color: var(--pink);
         padding: 0px 50px;
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-evenly;
+        align-content: space-around;
         align-items: flex-start;
-        flex-direction: column;
     }
 
     #portfolio-section h1 {
@@ -773,14 +761,25 @@ header button {
     }
 
     #portfolio-examples {
+        width: 50%;
         display: flex;
-        max-height: 550px;
+        flex-wrap: wrap;
+        gap: 5% 10%;
+    }
+
+    #portfolio-examples>* {
+        flex: 0 0 40%;
     }
 
     #portfolio-examples article {
         padding: 32px 16px;
-        max-width: 350px;
-        min-width: 250px;
+        max-width: 95%;
+        transition: all 0.6s ease;
+    }
+    
+    #portfolio-examples article:hover {
+        box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
+        transform: scale(1.05);
     }
 
     #portfolio-examples article h2 {
@@ -795,32 +794,20 @@ header button {
         padding-top: 20px;
     }
 
-    #article-height {
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-between;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
     .diploma {
         background-color: var(--light-brown);
         border-radius: 10px;
-        padding: 20px 50px;
-        margin: 0px 25px 0px 0px;
     }
 
     .shecodes-web {
         background-color: var(--light-brown);
         border-radius: 10px;
-        padding: 20px 50px;
-        margin: 0px 25px 0px 0px;
+        order: 1;
     }
 
     .python {
         background-color: var(--light-brown);
         border-radius: 10px;
-        padding: 45px 50px;
     }
 
 
@@ -834,14 +821,15 @@ header button {
 
 @media (min-width: 992px) {
     #portfolio-section {
-        height: 144vh;
+        height: 248vh;
         width: auto;
         background-color: var(--pink);
         padding: 0px 100px;
         display: flex;
+        flex-wrap: nowrap;
         justify-content: space-evenly;
+        align-content: space-around;
         align-items: flex-start;
-        flex-direction: column;
     }
 
     #portfolio-section h1 {
@@ -860,14 +848,25 @@ header button {
     }
 
     #portfolio-examples {
+        width: 50%;
         display: flex;
-        max-height: 550px;
+        flex-wrap: wrap;
+        gap: 10%;
+    }
+
+    #portfolio-examples>* {
+        flex: 0 0 40%;
     }
 
     #portfolio-examples article {
         padding: 32px 16px;
-        max-width: 350px;
-        min-width: 250px;
+        max-width: 95%;
+        transition: all 0.6s ease;
+    }
+    
+    #portfolio-examples article:hover {
+        box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
+        transform: scale(1.05);
     }
 
     #portfolio-examples article h2 {
@@ -882,32 +881,20 @@ header button {
         padding-top: 20px;
     }
 
-    #article-height {
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-between;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
     .diploma {
         background-color: var(--light-brown);
         border-radius: 10px;
-        padding: 20px 50px;
-        margin: 0px 25px 0px 0px;
     }
 
     .shecodes-web {
         background-color: var(--light-brown);
         border-radius: 10px;
-        padding: 20px 50px;
-        margin: 0px 25px 0px 0px;
+        order: 1;
     }
 
     .python {
         background-color: var(--light-brown);
         border-radius: 10px;
-        padding: 45px 50px;
     }
 
 
@@ -921,14 +908,15 @@ header button {
 
 @media (min-width: 1280px) {
     #portfolio-section {
-        height: 144vh;
+        height: 296vh;
         width: auto;
         background-color: var(--pink);
         padding: 0px 200px;
         display: flex;
+        flex-wrap: nowrap;
         justify-content: space-evenly;
+        align-content: space-around;
         align-items: flex-start;
-        flex-direction: column;
     }
 
     #portfolio-section h1 {
@@ -947,14 +935,25 @@ header button {
     }
 
     #portfolio-examples {
+        width: 50%;
         display: flex;
-        max-height: 550px;
+        flex-wrap: wrap;
+        gap: 5% 10%;
+    }
+
+    #portfolio-examples>* {
+        flex: 0 1 40%;
     }
 
     #portfolio-examples article {
         padding: 32px 16px;
-        max-width: 350px;
-        min-width: 250px;
+        max-width: 95%;
+        transition: all 0.6s ease;
+    }
+    
+    #portfolio-examples article:hover {
+        box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
+        transform: scale(1.05);
     }
 
     #portfolio-examples article h2 {
@@ -969,34 +968,21 @@ header button {
         padding-top: 20px;
     }
 
-    #article-height {
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-between;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
     .diploma {
         background-color: var(--light-brown);
         border-radius: 10px;
-        padding: 20px 50px;
-        margin: 0px 25px 0px 0px;
     }
 
     .shecodes-web {
         background-color: var(--light-brown);
         border-radius: 10px;
-        padding: 20px 50px;
-        margin: 0px 25px 0px 0px;
+        order: 1;
     }
 
     .python {
         background-color: var(--light-brown);
         border-radius: 10px;
-        padding: 45px 50px;
     }
-
 
     #portfolio-examples .photos {
         display: block;
