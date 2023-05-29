@@ -1137,7 +1137,7 @@ header button {
 @media (min-width: 376px){
     .contact-section {
         background-color: var(--pink);
-        height: 224vh;
+        height: 216vh;
         padding: 0px 32px;
         display: flex;
         flex-direction: column;
