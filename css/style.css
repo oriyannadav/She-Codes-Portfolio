@@ -428,7 +428,7 @@ header button {
 /* about */
 
 #about-section{
-    height: 100vh;
+    height: 144vh;
     background-color: var(--pink);
     padding: 0px 32px;
     display: flex;
@@ -652,7 +652,7 @@ header button {
 /* portfolio */
 
 #portfolio-section {
-    height: 240vh;
+    height: 224vh;
     width: auto;
     background-color: var(--pink);
     padding: 0px 32px;
@@ -994,148 +994,284 @@ header button {
 
 /* contact */
 
-.contact-section {
-    background-color: var(--pink);
-    height: 176vh;
-    padding: 0px 32px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+@media (min-width: 0px) {
+    .contact-section {
+        background-color: var(--pink);
+        height: 224vh;
+        padding: 0px 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .contact {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    #contact-headings {
+        display: block;
+    }
+    
+    .contact h1 {
+        font-size: 4rem;
+        max-width: 70%;
+        color: var(--black);
+    }
+    
+    .contact p {
+        font-size: 1.5rem;
+        color: var(--dark-brown);
+        line-height: 1.5;
+        margin: 0px 0px 24px;
+    }
+    
+    #profile-pic {
+        width: 0px;
+        height: 0px;
+    }
+    
+    #contact-and-photo { 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .contact-section h3 {
+        padding: 0px 16px;
+    }
+    
+    #instagram-icon, #facebook-icon, .social-media h3 {
+        display: inline;
+    }
+    
+    .social-media a {
+        text-decoration: none;
+        color: var(--black);
+        cursor: pointer;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+        .gibhub-icon, .linkedin-icon, .instagram-icon, .facebook-icon {
+        display: inline-flex;
+        flex: 1;
+        padding: 24px 32px 24px 0px;
+    }
+    
+    .static {
+        position: absolute;
+        background-color: var(--pink);
+    }
+    
+    .static:hover {
+        opacity: 0;
+        cursor: pointer;
+    }
+    
+    .form {
+        padding-top: 104px;
+    }
+    
+    .form h2{
+        font-size: 2rem;
+        color: var(--dark-brown);
+        padding: 8px 0px;
+        font-weight: normal;
+    }
+    
+    .form label {
+        color: var(--black);
+    }
+    
+    #textarea-section {
+        padding: 24px 0;
+    }
+    
+    #your-name, #your-email, #your-message {
+        padding-bottom: 8px;
+    }
+    
+    #your-email {
+        padding-top: 24px;
+    }
+    
+    .form input[type="text"], .form input[type="email"], .form textarea {
+        border: rgb(148,148,148) solid 1px;
+        border-radius: 4px;
+        background-clip: padding-box;
+        width: 100%;
+        color: rgb(51,51,51);
+        font-size: 1.5rem;
+        padding: 36px 16px;
+        vertical-align: middle;
+    }
+    
+    .form input[type="text"], .form input[type="email"] {
+        height: 40px;
+    }
+    
+    .form textarea {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        line-height: 1.5;
+        height: 202px;
+    }
+    
+    .form input[type="submit"] {
+        background-color: var(--black);
+        color: var(--pink);
+        width: 240px;
+        height: 56px;
+        border: 0;
+        margin-top: 8px;
+        cursor: pointer;
+        border-radius: 4px;
+        float: right;
+    }
 }
 
-.contact {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-#contact-headings {
-    display: block;
-}
-
-.contact h1 {
-    font-size: 4rem;
-    max-width: 70%;
-    color: var(--black);
-}
-
-.contact p {
-    font-size: 1.5rem;
-    color: var(--dark-brown);
-    line-height: 1.5;
-    margin: 0px 0px 24px;
-}
-
-#profile-pic {
-    width: 0px;
-    height: 0px;
-}
-
-#contact-and-photo { 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.contact-section h3 {
-    padding: 0px 16px;
-}
-
-#instagram-icon, #facebook-icon, .social-media h3 {
-    display: inline;
-}
-
-.social-media a {
-    text-decoration: none;
-    color: var(--black);
-    cursor: pointer;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-    .gibhub-icon, .linkedin-icon, .instagram-icon, .facebook-icon {
-    display: inline-flex;
-    flex: 1;
-    padding: 24px 32px 24px 0px;
-}
-
-.static {
-    position: absolute;
-    background-color: var(--pink);
-}
-
-.static:hover {
-    opacity: 0;
-    cursor: pointer;
-}
-
-.form {
-    padding-top: 104px;
-}
-
-.form h2{
-    font-size: 2rem;
-    color: var(--dark-brown);
-    padding: 8px 0px;
-    font-weight: normal;
-}
-
-.form label {
-    color: var(--black);
-}
-
-/* .block-section, #textarea-section {
-    display: inline-block;
-    width: 50%;
-    margin: 40px auto;
-} */
-
-#textarea-section {
-    padding: 24px 0;
-}
-
-#your-name, #your-email, #your-message {
-    padding-bottom: 8px;
-}
-
-#your-email {
-    padding-top: 24px;
-}
-
-.form input[type="text"], .form input[type="email"], .form textarea {
-    border: rgb(148,148,148) solid 1px;
-    border-radius: 4px;
-    background-clip: padding-box;
-    width: 100%;
-    color: rgb(51,51,51);
-    font-size: 1.5rem;
-    padding: 36px 16px;
-    vertical-align: middle;
-}
-
-.form input[type="text"], .form input[type="email"] {
-    height: 40px;
-}
-
-.form textarea {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    line-height: 1.5;
-    height: 202px;
-}
-
-.form input[type="submit"] {
-    background-color: var(--black);
-    color: var(--pink);
-    width: 240px;
-    height: 56px;
-    border: 0;
-    margin-top: 8px;
-    cursor: pointer;
-    border-radius: 4px;
-    float: right;
+@media (min-width: 376px){
+    .contact-section {
+        background-color: var(--pink);
+        height: 224vh;
+        padding: 0px 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .contact {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    #contact-headings {
+        display: block;
+    }
+    
+    .contact h1 {
+        font-size: 4rem;
+        max-width: 70%;
+        color: var(--black);
+    }
+    
+    .contact p {
+        font-size: 1.5rem;
+        color: var(--dark-brown);
+        line-height: 1.5;
+        margin: 0px 0px 24px;
+    }
+    
+    #profile-pic {
+        width: 0px;
+        height: 0px;
+    }
+    
+    #contact-and-photo { 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .contact-section h3 {
+        padding: 0px 16px;
+    }
+    
+    #instagram-icon, #facebook-icon, .social-media h3 {
+        display: inline;
+    }
+    
+    .social-media a {
+        text-decoration: none;
+        color: var(--black);
+        cursor: pointer;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+        .gibhub-icon, .linkedin-icon, .instagram-icon, .facebook-icon {
+        display: inline-flex;
+        flex: 1;
+        padding: 24px 32px 24px 0px;
+    }
+    
+    .static {
+        position: absolute;
+        background-color: var(--pink);
+    }
+    
+    .static:hover {
+        opacity: 0;
+        cursor: pointer;
+    }
+    
+    .form {
+        padding-top: 104px;
+    }
+    
+    .form h2{
+        font-size: 2rem;
+        color: var(--dark-brown);
+        padding: 8px 0px;
+        font-weight: normal;
+    }
+    
+    .form label {
+        color: var(--black);
+    }
+    
+    #textarea-section {
+        padding: 24px 0;
+    }
+    
+    #your-name, #your-email, #your-message {
+        padding-bottom: 8px;
+    }
+    
+    #your-email {
+        padding-top: 24px;
+    }
+    
+    .form input[type="text"], .form input[type="email"], .form textarea {
+        border: rgb(148,148,148) solid 1px;
+        border-radius: 4px;
+        background-clip: padding-box;
+        width: 100%;
+        color: rgb(51,51,51);
+        font-size: 1.5rem;
+        padding: 36px 16px;
+        vertical-align: middle;
+    }
+    
+    .form input[type="text"], .form input[type="email"] {
+        height: 40px;
+    }
+    
+    .form textarea {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        line-height: 1.5;
+        height: 202px;
+    }
+    
+    .form input[type="submit"] {
+        background-color: var(--black);
+        color: var(--pink);
+        width: 240px;
+        height: 56px;
+        border: 0;
+        margin-top: 8px;
+        cursor: pointer;
+        border-radius: 4px;
+        float: right;
+    }
 }
 
 @media (min-width: 768px) {
