@@ -1012,6 +1012,7 @@ header button {
     
     #contact-headings {
         display: block;
+        padding-bottom: 32px;
     }
     
     .contact h1 {
